@@ -1,799 +1,525 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html class="html-loading">
+		
 
 <head>
-  <meta charset="utf-8" />
-   
-  <meta name="keywords" content="Rex，博客" />
-   
-  <meta name="description" content="Rex,博客" />
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
-     Rex
+    
+      Rex
+    
   </title>
-  <meta name="generator" content="hexo-theme-yilia-plus">
-  
-  <link rel="shortcut icon" href="https://s2.ax1x.com/2020/03/08/3x3bUe.png" />
-  
-  
-<link rel="stylesheet" href="/css/main.css">
+  <meta name="author" content="Rex">
+  <meta name="keywords" content="Rex，博客" />
+  <meta name="description" content="大鹏一日同风起，扶摇直上九万里" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
 
+  <!-- css -->
   
-<script src="/js/pace.min.js"></script>
-
-
-  
+<link rel="stylesheet" href="/css/Annie.css">
 
   
-
-</head>
-
-</html>
-
-<body>
-  <div id="app">
-    <main class="content">
-      
-<section class="cover">
-    
-      
-      <a class="forkMe" href="https://github.com/homesquatsuniversity/homesquatsuniversity.github.io"
-        target="_blank"><img width="149" height="149" src="/images/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="https://s2.ax1x.com/2020/03/08/3x3i11.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">Rex</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-
-<div id="main">
-  <section class="outer">
-  <article class="articles">
-    
-    
-    
-    
-    <article id="post-量子计算简介" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/"
-    >量子计算基础</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/" class="article-date">
-  <time datetime="2020-03-12T06:21:45.000Z" itemprop="datePublished">2020-03-12</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/">量子计算</a> / <a class="article-category-link" href="/categories/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E5%9F%BA%E7%A1%80/">量子计算基础</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <p>从这篇博客开始，我们将开始量子计算的学习</p>
-<h1 id="什么是量子计算？"><a href="#什么是量子计算？" class="headerlink" title="什么是量子计算？"></a>什么是量子计算？</h1><blockquote>
-<p>有些问题是如此的困难，如此之大，以至于即使世界上每台超级计算机都在解决该问题，仍然需要比宇宙的寿命更长的时间才能解决。</p>
-</blockquote>
-<blockquote>
-<p>量子计算机有望解决地球上最大的一些挑战-在环境，农业，健康，能源，气候，材料科学以及我们尚未想到的问题中。量子计算机的影响将是深远的，其影响将与1947年晶体管的诞生一样大，这为当今的数字经济铺平了道路。</p>
-</blockquote>
-<blockquote>
-<p>量子计算利用量子物理学的独特行为来提供新的强大的计算模型。量子物理学理论认为，物质在量子水平上可以处于多种经典状态的叠加中。这么多州互相干扰，就像潮汐池中的波浪一样。测量后的物质状态“崩溃”为经典状态之一。</p>
-</blockquote>
-<blockquote>
-<p>此后，重复相同的测量将产生相同的经典结果。当粒子以某种方式相互作用时发生量子纠缠，即使粒子在物理上相距很远，也无法独立地描述每个粒子的量子态。</p>
-</blockquote>
-<blockquote>
-<p>量子计算将信息存储在物质的量子状态中，并利用其叠加和纠缠的量子性质来实现对该信息进行计算的量子运算，从而利用和学习对量子干涉进行编程。</p>
-</blockquote>
-<blockquote>
-<p>量子计算听起来可能令人生畏，但有了合适的资源，您现在就可以开始构建量子应用程序。<br>听得懂吗？没关系，这只是<a href="https://docs.microsoft.com/en-us/quantum/overview/what-is-quantum-computing" target="_blank" rel="noopener">Microsoft官方</a>的说辞.简而言之，量子计算就是通过量子比特利用多重量子态与量子纠缠技术，实现真正的“多线程”。如果你对计算机有一些基本的了解，你应该知道，我们现在所谓的多线程只是通过飞快地切换进程实现的，而量子计算，则是利用量子态真正的同时进行几百亿的进程。如果说，运行程序就是走迷宫，经典计算机时一个人走，量子计算机则是同时走所有的可能路径。<br>还是没懂？很快你就懂了！</p>
-</blockquote>
-      
-      <a class="article-more-link" href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/">阅读更多...</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag">基础</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97/" rel="tag">量子计算</a></li></ul>
-
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
-    <article id="post-用Markdown编写个人博客" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"
-    >用Markdown编写个人博客</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2020-03-09T06:12:42.000Z" itemprop="datePublished">2020-03-09</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <blockquote>
-<p>在上一节中，我们学会了如何搭建博客，有没有觉得很激动呢?🤩咳咳，言归正传，在你的博客的基础上，我们现在要学会写博客<br>写博客要做的有：</p>
-</blockquote>
-<ol>
-<li>生成博客文件</li>
-<li>安装写博客工具</li>
-<li>编辑标题、日期、分类与标签</li>
-<li>用Markdown写博客</li>
-<li>本地预览博客</li>
-<li>部署到云端
-      
-      <a class="article-more-link" href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">阅读更多...</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E5%86%99/" rel="tag">编写</a></li></ul>
-
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
-    <article id="post-关于我" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/03/09/%E5%85%B3%E4%BA%8E%E6%88%91/"
-    >关于我</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/03/09/%E5%85%B3%E4%BA%8E%E6%88%91/" class="article-date">
-  <time datetime="2020-03-09T03:07:37.000Z" itemprop="datePublished">2020-03-09</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Rex/">Rex</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <p>Rex<br>真实姓名：不详<br>身高： 不详<br>血型：不详<br>学历：不详<br>生卒年份：不详<br>……</p>
-      
-      <a class="article-more-link" href="/2020/03/09/%E5%85%B3%E4%BA%8E%E6%88%91/">阅读更多...</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Rex/" rel="tag">Rex</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%80%E4%BB%8B/" rel="tag">简介</a></li></ul>
-
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
-    <article id="post-家里蹲大学简介" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/03/08/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%E7%AE%80%E4%BB%8B/"
-    >家里蹲大学简介</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/03/08/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%E7%AE%80%E4%BB%8B/" class="article-date">
-  <time datetime="2020-03-08T05:45:37.000Z" itemprop="datePublished">2020-03-08</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6/">家里蹲大学</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <blockquote>
-<p>正如他的名字一样，家里蹲大学是一所即使在家里蹲着也能上的大学。他几乎无所不包，音乐、物理、信息科学……只要是一门学科，只要你有兴趣，你就可以加入家里蹲大学。</p>
-</blockquote>
-<h1 id="家里蹲大学职员分布"><a href="#家里蹲大学职员分布" class="headerlink" title="家里蹲大学职员分布"></a>家里蹲大学职员分布</h1><p>家里蹲大学包括以下几个职员：</p>
-<h2 id="校委员会"><a href="#校委员会" class="headerlink" title="校委员会"></a>校委员会</h2><p>校委员会包括会长与会员。</p>
-<h3 id="校委员会会长-Rex"><a href="#校委员会会长-Rex" class="headerlink" title="校委员会会长:Rex"></a>校委员会会长:Rex</h3><p>任命家里蹲大学职员，投票时顶三票，拥有一票否决权，并辅助校长。</p>
-      
-      <a class="article-more-link" href="/2020/03/08/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%E7%AE%80%E4%BB%8B/">阅读更多...</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6/" rel="tag">家里蹲大学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%80%E4%BB%8B/" rel="tag">简介</a></li></ul>
-
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
-    <article id="post-搭建个人博客" class="article article-type-post" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"
-    >搭建个人博客</a
-  >
-</h2>
-  
-
-    </header>
-    
-
-    
-    <div class="article-meta">
-      <a href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2020-03-07T07:43:49.000Z" itemprop="datePublished">2020-03-07</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
-  </div>
-
-      
-      
-      
-    </div>
-    
-
-    
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-
-      
-
-      
-      <h1 id="为什么要建立个人博客"><a href="#为什么要建立个人博客" class="headerlink" title="为什么要建立个人博客"></a>为什么要建立个人博客</h1><p>建立博客，个人，而非在第三方网站上，无疑是一种极端的体验——想写什么就写什么，肆无忌惮，并且可以自己选择好看的样式，用图说话：<br>第三方网站博客：<br><img src="https://pic.downk.cc/item/5e6362bd98271cb2b8ce5b40.png" alt="Alt text"><br>而博主自己的网站：<br><img src="https://pic.downk.cc/item/5e6362c398271cb2b8ce5e29.png" alt="Alt text"><br>这其中的区别自然不言而喻。</p>
-      
-      <a class="article-more-link" href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">阅读更多...</a>
-      
-      
-      <!-- reward -->
-      
-    </div>
-    
-    
-      <!-- copyright -->
-      
-    <footer class="article-footer">
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%85%8D%E8%B4%B9/" rel="tag">免费</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
-
-
-    </footer>
-
-  </div>
-
-  
-
-  
-  
-  
-
-  
-
-</article>
-    
-  </article>
-  
-
-  
-</section>
-</div>
-
-      <footer class="footer">
-  <div class="outer">
-    <ul class="list-inline">
-      <li>
-        &copy;
-        2020
-        Rex
-      </li>
-      <li>
-        
-        Powered by
-        
-        
-        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
-        
-      </li>
-    </ul>
-    <ul class="list-inline">
-      <li>
-        
-        
-        <span>
-  <i>PV:<span id="busuanzi_value_page_pv"></span></i>
-  <i>UV:<span id="busuanzi_value_site_uv"></span></i>
-</span>
-        
-      </li>
-      
-      <li>
-        <!-- cnzz统计 -->
-        
-        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1278069914&amp;web_id=1278069914'></script>
-        
-      </li>
-    </ul>
-  </div>
-</footer>
-      <div class="to_top">
-        <div class="totop" id="totop">
-  <i class="ri-arrow-up-line"></i>
-</div>
-      </div>
-    </main>
-    <aside class="sidebar">
-      <button class="navbar-toggle"></button>
-<nav class="navbar">
-  
-  <div class="logo">
-    <a href="/"><img src="https://s2.ax1x.com/2020/03/08/3x3bUe.png" alt="Rex"></a>
-  </div>
-  
-  <ul class="nav nav-main">
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/">主页</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/archives">归档</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/categories">分类</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="https://homesquatsuniversity.github.io/2020/03/09/%E5%85%B3%E4%BA%8E%E6%88%91/" target="_blank" rel="noopener">关于我</a>
-    </li>
-    
-  </ul>
-</nav>
-<nav class="navbar navbar-bottom">
-  <ul class="nav">
-    <li class="nav-item">
-      
-      <a class="nav-item-link nav-item-search"  title="Search">
-        <i class="ri-search-line"></i>
-      </a>
-      
-      
-      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
-        <i class="ri-rss-line"></i>
-      </a>
-      
-    </li>
-  </ul>
-</nav>
-<div class="search-form-wrap">
-  <div class="local-search local-search-plugin">
-  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
-  <div id="local-search-result" class="local-search-result"></div>
-</div>
-</div>
-    </aside>
-    <div id="mask"></div>
-
-<!-- #reward -->
-<div id="reward">
-  <span class="close"><i class="ri-close-line"></i></span>
-  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
-  <div class="reward-box">
-    
-    <div class="reward-item">
-      <img class="reward-img" src="/images/alipay.jpg">
-      <span class="reward-type">支付宝</span>
-    </div>
-    
-    
-    <div class="reward-item">
-      <img class="reward-img" src="/images/wechat.jpg">
-      <span class="reward-type">微信</span>
-    </div>
-    
-  </div>
-</div>
-    
-<script src="/js/jquery-2.0.3.min.js"></script>
-
-
-<script src="/js/jquery.justifiedGallery.min.js"></script>
-
-
-<script src="/js/lazyload.min.js"></script>
-
-
-<script src="/js/busuanzi-2.3.pure.min.js"></script>
-
-
-<script src="/js/share.js"></script>
-
-
-
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
 
 
 <script>
-  try {
-    var typed = new Typed("#subtitle", {
-    strings: ['大鹏一日同风起，扶摇直上九万里。假令风歇时下来，犹能簸却沧溟水。','世人见我恒殊调，闻余大言皆冷笑。宣父犹能畏后生，丈夫未可轻年少。',''],
-    startDelay: 0,
-    typeSpeed: 300,
-    loop: true,
-    backSpeed: 100,
-    showCursor: true
-    });
-  } catch (err) {
-  }
-  
-</script>
-
-
-
-
-<script>
-  var ayerConfig = {
-    mathjax: ture
-  }
-</script>
-
-
-<script src="/js/ayer.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
-
-<script>
-    function viewer_init() {
-        let pswpElement = document.querySelectorAll('.pswp')[0];
-        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
-
-        $imgArr.forEach(($em, i) => {
-            $em.onclick = () => {
-                // slider展开状态
-                // todo: 这样不好，后面改成状态
-                if (document.querySelector('.left-col.show')) return
-                let items = []
-                $imgArr.forEach(($em2, i2) => {
-                    let img = $em2.getAttribute('data-idx', i2)
-                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
-                    let title = $em2.getAttribute('alt')
-                    // 获得原图尺寸
-                    const image = new Image()
-                    image.src = src
-                    items.push({
-                        src: src,
-                        w: image.width || $em2.width,
-                        h: image.height || $em2.height,
-                        title: title
-                    })
-                })
-                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
-                    index: parseInt(i)
-                });
-                gallery.init()
-            }
-        })
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
     }
-    viewer_init()
-</script>
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			主页
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="https://www.zhihu.com/people/feynkin/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/homesquatsuniversity" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			
 
 
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-      tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-  });
+	<!--cart style-->
+	<div class="layout-cart">
+	<div id="layout-cart">
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/" title=" 量子计算基础 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
 
-  MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for(i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
+				<div class="post-text">
+					<p class="post-time">
+						三月 12日, 2020
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/" title="量子计算基础">							
+							
+	<a href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/" itemprop="url">
+		量子计算基础
+	</a>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/unpacked/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							从这篇博客开始，我们将开始量子计算的学习
+什么是量子计算？
+有些问题是如此的困难，如此之大，以至于即使世界上每台超级计算机都在解决该问题，仍然需要比宇宙的...
+						
+					</p>
+					<p class="post-meta">
+						
 
 
-<script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
 
-    
-  </div>
-</body>
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title=" 用Markdown编写个人博客 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
 
+				<div class="post-text">
+					<p class="post-time">
+						三月 9日, 2020
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="用Markdown编写个人博客">							
+							
+	<a href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
+		用Markdown编写个人博客
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							
+在上一节中，我们学会了如何搭建博客，有没有觉得很激动呢?🤩咳咳，言归正传，在你的博客的基础上，我们现在要学会写博客写博客要做的有：
+
+
+生成博客文件
+...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/2020/03/09/%E5%85%B3%E4%BA%8E%E6%88%91/" title=" 关于我 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						三月 9日, 2020
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/2020/03/09/%E5%85%B3%E4%BA%8E%E6%88%91/" title="关于我">							
+							
+	<a href="/2020/03/09/%E5%85%B3%E4%BA%8E%E6%88%91/" itemprop="url">
+		关于我
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							Rex真实姓名：不详身高： 不详血型：不详学历：不详生卒年份：不详……
+
+好吧，如果你看到了这里，说明你的好奇心还是挺强的，那我就松一松口吧。本人Rex,...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/2020/03/08/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%E7%AE%80%E4%BB%8B/" title=" 家里蹲大学简介 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						三月 8日, 2020
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/2020/03/08/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%E7%AE%80%E4%BB%8B/" title="家里蹲大学简介">							
+							
+	<a href="/2020/03/08/%E5%AE%B6%E9%87%8C%E8%B9%B2%E5%A4%A7%E5%AD%A6%E7%AE%80%E4%BB%8B/" itemprop="url">
+		家里蹲大学简介
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							
+正如他的名字一样，家里蹲大学是一所即使在家里蹲着也能上的大学。他几乎无所不包，音乐、物理、信息科学……只要是一门学科，只要你有兴趣，你就可以加入家里蹲大...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title=" 搭建个人博客 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						三月 7日, 2020
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="搭建个人博客">							
+							
+	<a href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
+		搭建个人博客
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							为什么要建立个人博客建立博客，个人，而非在第三方网站上，无疑是一种极端的体验——想写什么就写什么，肆无忌惮，并且可以自己选择好看的样式，用图说话：第三方网...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+	</div>
+	
+	
+	<div id="pagination">
+		
+	</div>
+
+	
+
+</div>
+	
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2020, content by Rex. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
 </html>
