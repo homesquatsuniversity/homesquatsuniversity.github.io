@@ -1,269 +1,220 @@
-<!--
-	作者：Sariay
-	时间：2018-08-26
-	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
--->
+
+
 <!DOCTYPE html>
-<html class="html-loading">
-		
+<html lang="zh-Han" data-default-color-scheme=&#34;auto&#34;>
+
+
 
 <head>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <title>
-    
-      搭建个人博客 | Rex
-    
-  </title>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="Rex,博客">
   <meta name="author" content="Rex">
-  <meta name="keywords" content="Rex，博客" />
-  <meta name="description" content="大鹏一日同风起，扶摇直上九万里" />
-	<!-- favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta name="keywords" content="Rex，博客">
+  <title>搭建个人博客 - Rex</title>
 
-  <!-- css -->
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
   
-<link rel="stylesheet" href="/css/Annie.css">
+    
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
 
   
-  <!-- jquery -->
-	
-<script src="/plugin/jquery/jquery.min.js"></script>
 
 
-<script>
-    const CONFIG_BGIMAGE = {
-      mode: 'normal',
-      normalSrc: '/img/header-bg.jpg',
-      randomYouMax: 110,
-      randomYouSrc: 'https://sariay.github.io/Random-img/',
-	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
-	  preloaderEnable: true
-    }
-	
-    const CONFIG_LEACLOUD_COUNT = {
-      enable: false,
-	  appId: 'AU8...',
-	  appKey: '4cU...',
-	  serverURLs: 'http' || ' '
-    }
-  </script>
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_6peoq002giu.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 4.2.0"></head>
-	<body>
-		<!-- Preloader -->
-
-	<div id="preloader">
-		<div class="pre-container">
-			
-				<div class="spinner">
-					<div class="double-bounce1"></div>
-					<div class="double-bounce2"></div>
-				</div>
-						
-		</div>
-	</div>
 
 
-<!-- header -->
-<header class="fixbackground bg-pan-br">
-	<div class="mask">
-		<!-- motto -->
-		<div class="h-body">	
-			
-				<div class="motto text-shadow-pop-left">
-					<p class="content" id="motto-content">获取中...</p>
-					<p>-<p>
-					<p class="author" id="motto-author">Just a minute...</p>
-				</div>
-			
-		</div>
-		
-		<!-- others: such as time... -->			
-		<div class="h-footer">
-			<a href="javascript:;" id="read-more" class="scroll-down">
-				<span class="icon-anchor1 animation-scroll-down"></span>
-			</a>
-		</div>
-	</div>
-</header>
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Joseph Joseda</strong>&nbsp;</a>
 
-<div id="navigation-hide">
-	<!-- Progress bar -->
-	<div id="progress-bar"></div>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
 
-	<!-- Progress percent -->
-	<div id="progress-percentage"><span>0.0%</span></div>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
-	<div class="toc-switch"><span class="switch-button">目录</span></div>
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
 
-	<!-- Page title -->
-	<p>
-		
-			「搭建个人博客」
-		
-	</p>
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-03-07 15:43" pubdate>
+      March 7, 2020 pm
+    </time>
+  </div>
 
-	
-	
 
-	<!-- Nav trigger for navigation-H-->
-	<a class="nav-trigger"><span></span></a>
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      15
+       分钟
+    </span>
+  
+
+  
+  
 </div>
 
-<!-- Navigation in div(id="navigation-H") -->
-<nav class="nav-container" id="cd-nav">
-	<div class="nav-header">
-		<span class="logo"> 
-			<img src="/img/logo.png">
-		</span>
-		<a href="javascript:;" class="nav-close"></a>
-	</div>
-	
-	<div class="nav-body">
-		<ul id="global-nav">
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home" target="_blank">主页</a>
-		</li>
-		
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
-		</li>
-		
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
-		</li>
-		
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
-		</li>
-		
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about" target="_blank">关于</a>
-		</li>
-		
-	
-		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
-		</li>
-		
-	
+            
+          </div>
 
-	
-</ul>
-	</div>
-	
-	<div class="nav-footer">
-		<ul id="global-social">
-	
-		<li>
-			<a href="https://www.zhihu.com/people/feynkin/" target="_blank">
-				<span class="icon-zhihu"></span>
-			</a>
-		</li>
-	
-		<li>
-			<a href="https://github.com/homesquatsuniversity" target="_blank">
-				<span class="icon-github"></span>
-			</a>
-		</li>
-			
-</ul>
+          
+        </div>
+      </div>
+    </div>
+  </header>
 
-	</div>
-</nav>
-			
-		<!--main-->
-		<main>
-			<!--
-	时间：2018-11-17
-	描述：
-		插件名称：katelog.min.js
-		插件作者：KELEN
-		插件来源: https://github.com/KELEN/katelog
--->
+  <main>
+    
+      
 
-	
-		<div class="layout-toc">
-			<div id="layout-toc">
-				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
-			</div>
-		</div>
-
-		
-<script src="/plugin/toc/katelog.min.js"></script>
-
-
-		
-	 
-
-<div class="layout-post">
-	<div id="layout-post">
-		<div class="article-title">
-			
-	<a href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
-		搭建个人博客
-	</a>
-
-		</div>
-
-		<div class="article-meta">
-			<span>
-				<i class="icon-calendar1"></i>
-				
-				
-
-
-
-
-	更新于
-
-	<a href="/2020/03/07/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" itemprop="url">
-		<time datetime="2020-03-07T07:43:49.000Z" itemprop="dateUpdated">
-	  		2020-04-13
-	  </time>
-	</a> 
-
-
-
-			</span>
-			<span>
-				
-	<i class="icon-price-tags"></i>
-	
-		<a href="/tags/%E5%85%8D%E8%B4%B9/" class=" ">
-			免费
-		</a>
-	
-		<a href="/tags/%E5%8D%9A%E5%AE%A2/" class=" ">
-			博客
-		</a>
-	
-		<a href="/tags/hexo/" class=" ">
-			hexo
-		</a>
-	
-		
-			</span>
-			
-			
-
-
-
-		</div>
-
-		<div class="article-content" id="article-content">
-			<h1 id="为什么要建立个人博客"><a href="#为什么要建立个人博客" class="headerlink" title="为什么要建立个人博客"></a>为什么要建立个人博客</h1><p>建立博客，个人，而非在第三方网站上，无疑是一种极端的体验——想写什么就写什么，肆无忌惮，并且可以自己选择好看的样式，用图说话：<br>第三方网站博客：<br><img src="https://pic.downk.cc/item/5e6362bd98271cb2b8ce5b40.png" alt="Alt text"><br>而博主自己的网站：<br><img src="https://pic.downk.cc/item/5e6362c398271cb2b8ce5e29.png" alt="Alt text"><br>这其中的区别自然不言而喻。</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">搭建个人博客</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h1 id="为什么要建立个人博客"><a href="#为什么要建立个人博客" class="headerlink" title="为什么要建立个人博客"></a>为什么要建立个人博客</h1><p>建立博客，个人，而非在第三方网站上，无疑是一种极端的体验——想写什么就写什么，肆无忌惮，并且可以自己选择好看的样式，用图说话：<br>第三方网站博客：<br><img src="https://pic.downk.cc/item/5e6362bd98271cb2b8ce5b40.png" srcset="/img/loading.gif" alt="Alt text"><br>而博主自己的网站：<br><img src="https://pic.downk.cc/item/5e6362c398271cb2b8ce5e29.png" srcset="/img/loading.gif" alt="Alt text"><br>这其中的区别自然不言而喻。</p>
 <a id="more"></a>
 <hr>
-<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>进入<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js官网</a><br><img src="https://i.postimg.cc/PfZyBwvx/Microsoft-Edge-2020-3-8-8-41-04-LI.jpg" alt="Alt text"><br>选择蓝框选中的按钮，下载。完成后安装，什么都不要更改，一路Next</p>
-<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>进入<a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a><br><img src="https://s2.ax1x.com/2020/03/08/3x9A54.jpg" alt="Alt text"><br>还是点蓝框中的按钮，就会下载<br>嫌国外下载慢的，可以用<a href="https://share.weiyun.com/5RxlIZh" target="_blank" rel="noopener">腾讯微云下载</a>密码：pmnytq但不推荐，因为不一定是最新的。<br>下载完后安装，什么都不要更改，一路Next</p>
-<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><p>hexo是今天的主角。进入<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a><br><img src="https://s2.ax1x.com/2020/03/08/3x9e2R.jpg" alt="Alt text"><br>这次不要乱点，Windows+R，打开运行，在文本框中输入cmd，回车<br>输入蓝框中的蓝框中的文本（除第一个符号），也就是下面的：<br><code>npm install hexo-cli-g</code><br>回车，就会自动安装。</p>
+<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>进入<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">Node.js官网</a><br><img src="https://i.postimg.cc/PfZyBwvx/Microsoft-Edge-2020-3-8-8-41-04-LI.jpg" srcset="/img/loading.gif" alt="Alt text"><br>选择蓝框选中的按钮，下载。完成后安装，什么都不要更改，一路Next</p>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>进入<a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a><br><img src="https://s2.ax1x.com/2020/03/08/3x9A54.jpg" srcset="/img/loading.gif" alt="Alt text"><br>还是点蓝框中的按钮，就会下载<br>嫌国外下载慢的，可以用<a href="https://share.weiyun.com/5RxlIZh" target="_blank" rel="noopener">腾讯微云下载</a>密码：pmnytq但不推荐，因为不一定是最新的。<br>下载完后安装，什么都不要更改，一路Next</p>
+<h2 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h2><p>hexo是今天的主角。进入<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a><br><img src="https://s2.ax1x.com/2020/03/08/3x9e2R.jpg" srcset="/img/loading.gif" alt="Alt text"><br>这次不要乱点，Windows+R，打开运行，在文本框中输入cmd，回车<br>输入蓝框中的蓝框中的文本（除第一个符号），也就是下面的：<br><code>npm install hexo-cli-g</code><br>回车，就会自动安装。</p>
 <hr>
 <h1 id="本地博客的搭建"><a href="#本地博客的搭建" class="headerlink" title="本地博客的搭建"></a>本地博客的搭建</h1><h2 id="安装博客框架"><a href="#安装博客框架" class="headerlink" title="安装博客框架"></a>安装博客框架</h2><blockquote>
 <p>博客框架也就是你博客网站的主框架，一切文章、主题都在上面运行<br>在任意一个位置（最好不是系统盘）新建一个文件夹，比如blog，用shift+鼠标右键blog文件夹，选择“在此处打开Powershell窗口”在窗口中输入：<br><code>hexo init</code><br>等待，当它出现输入提示符时，表示你已经构建成功了。<br>此时，打开文件夹，找到_config.yml文件，打开它。可以用记事本打开，但不推荐，推荐用<a href="https://share.weiyun.com/5yfSk6X" target="_blank" rel="noopener">Visual Studio Code</a>密码：286dlh<br>打开之后，修改“#Site”这行下面的内容一些值，示例：</p>
@@ -273,7 +224,7 @@
 <p>注意：冒号后必有<strong><em>空格</em></strong><br>其中<code>title</code>是标题，<code>subtitle</code>是副标题，<code>description</code>是描述（搜索引擎会捕捉）<code>keywords</code>是关键词（搜索引擎会捕捉）<code>author</code>是作者，<code>language</code>是语言<br>目前只修改这些。</p>
 </blockquote>
 <h2 id="安装博客主题"><a href="#安装博客主题" class="headerlink" title="安装博客主题"></a>安装博客主题</h2><blockquote>
-<p>博客主题是博客的门户<br>这里推荐一个主题：<a href="https://share.weiyun.com/5j9SKiD" target="_blank" rel="noopener">Next</a>密码：x8kuds<br>更多主题，请访问：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo官方主题</a><br>Next主题是一个非常经典的主题了，很多人都在用<br>这里只介绍Next主题，其他主题可以类比。<br>下载压缩包后，解压，将文件夹放入blog/themes<br>此时，返回blog文件夹打开_config.yml文件，寻找themes，如图所示：<br><img src="https://s2.ax1x.com/2020/03/08/3xSpJs.jpg" alt="3xSpJs.jpg"><br>将冒号后的值改为next<br>注意：冒号后必有<strong><em>空格</em></strong> </p>
+<p>博客主题是博客的门户<br>这里推荐一个主题：<a href="https://share.weiyun.com/5j9SKiD" target="_blank" rel="noopener">Next</a>密码：x8kuds<br>更多主题，请访问：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo官方主题</a><br>Next主题是一个非常经典的主题了，很多人都在用<br>这里只介绍Next主题，其他主题可以类比。<br>下载压缩包后，解压，将文件夹放入blog/themes<br>此时，返回blog文件夹打开_config.yml文件，寻找themes，如图所示：<br><img src="https://s2.ax1x.com/2020/03/08/3xSpJs.jpg" srcset="/img/loading.gif" alt="3xSpJs.jpg"><br>将冒号后的值改为next<br>注意：冒号后必有<strong><em>空格</em></strong> </p>
 </blockquote>
 <h2 id="安装“分类”插件"><a href="#安装“分类”插件" class="headerlink" title="安装“分类”插件"></a>安装“分类”插件</h2><blockquote>
 <p>分类插件可以使您的网站更加顺眼<br>shift+右键blog文件夹，选择“在此处打开Powershell窗口”在窗口中输入：<code>hexo new page categorie</code><br>然后将以下复制到/source/categories/index.md文件:</p>
@@ -297,7 +248,7 @@
 </blockquote>
 <hr>
 <h1 id="云端与本地同步"><a href="#云端与本地同步" class="headerlink" title="云端与本地同步"></a>云端与本地同步</h1><h2 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h2><p>很简单，不再阐述</p>
-<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>看图说话，点蓝框中的<br><img src="https://s2.ax1x.com/2020/03/08/3xPvPe.jpg" alt="3xPvPe.jpg"><br>只填蓝框中的一项，格式：<code>你的用户名.github.io</code><br><img src="https://s2.ax1x.com/2020/03/08/3xPcD0.jpg" alt="3xPcD0.jpg"><br><img src="https://s2.ax1x.com/2020/03/08/3xiAIS.jpg" alt="3xiAIS.jpg"><br>之后复制仓库网址，打开_config.yml文件，修改最后一段为：</p>
+<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>看图说话，点蓝框中的<br><img src="https://s2.ax1x.com/2020/03/08/3xPvPe.jpg" srcset="/img/loading.gif" alt="3xPvPe.jpg"><br>只填蓝框中的一项，格式：<code>你的用户名.github.io</code><br><img src="https://s2.ax1x.com/2020/03/08/3xPcD0.jpg" srcset="/img/loading.gif" alt="3xPcD0.jpg"><br><img src="https://s2.ax1x.com/2020/03/08/3xiAIS.jpg" srcset="/img/loading.gif" alt="3xiAIS.jpg"><br>之后复制仓库网址，打开_config.yml文件，修改最后一段为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;homesquatsuniversity&#x2F;homesquatsuniversity.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>repository填自己的仓库网址，并在后面加<code>.git</code> </p>
@@ -307,531 +258,344 @@
 <p>在弹出的窗口中输入自己的用户名与密码，出现这样的界面时：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Enumerating objects: 17, done.</span><br><span class="line">Counting objects: 100% (17&#x2F;17), done.</span><br><span class="line">Delta compression using up to 8 threads</span><br><span class="line">Compressing objects: 100% (5&#x2F;5), done.</span><br><span class="line">Writing objects: 100% (9&#x2F;9), 4.44 KiB | 2.22 MiB&#x2F;s, done.</span><br><span class="line">Total 9 (delta 4), reused 0 (delta 0)</span><br><span class="line">remote: Resolving deltas: 100% (4&#x2F;4), completed with 2 local objects.</span><br><span class="line">To https:&#x2F;&#x2F;github.com&#x2F;homesquatsuniversity&#x2F;homesquatsuniversity.github.io.git</span><br><span class="line">   b374825..19516fd  HEAD -&gt; master</span><br><span class="line">Branch &#39;master&#39; set up to track remote branch &#39;master&#39; from &#39;https:&#x2F;&#x2F;github.com&#x2F;homesquatsuniversity&#x2F;homesquatsuniversity.github.io.git&#39;.</span><br><span class="line">[32mINFO [39m Deploy done: [35mgit[39m</span><br></pre></td></tr></table></figure>
 <p>就说明你大功告成了！</p>
-	
-		</div>
-		
-		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
 
-		<!-- relate post, comment...-->
-		<div class="investment-container">
-			<div class="investment-header">
-				<div class="investment-title-1">
-					<div class="on">相关文章</div>
-					<div>评论</div>
-					<div>分享</div>
-				</div>
-				<div class="investment-title-2">	            
-					
-	<span>
-		<a id="totop-post-page">返回顶部</a>
-		
-			<a href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="用Markdown编写个人博客" rel="prev">
-				&laquo;上一篇
-			</a>
-		
-			
-	</span>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%85%8D%E8%B4%B9/">免费</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+                    
+                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">用Markdown编写个人博客</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
 
-
-      		
-				</div>	
-			</div>
-			
-			<div class="investment-content">
-				<div class="investment-content-list">
-					
-
-<div class="relate-post">
-	
-		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="用Markdown编写个人博客">
-								用Markdown编写个人博客			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 9日, 2020				
-							</p>
-							<p class="relate-post-content">
-								
-在上一节中，我们学会了如何搭建博客，有没有觉得很激动呢?🤩咳咳，言归正传，在你的博客的基础上，我们现在要学会写博客写博客要做的有：
-
-
-生成博客文件
-安装写博客工具
-编辑标题、日期、分类与标签
-用Markdown写博客
-本地预览博...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2020/03/09/%E7%94%A8Markdown%E7%BC%96%E5%86%99%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="用Markdown编写个人博客">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="用Markdown编写个人博客"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/04/14/2020%E5%B9%B44%E6%9C%8814%E6%97%A5%E6%97%A5%E8%AE%B0/" title="2020年4月14日日记">
-								2020年4月14日日记			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								四月 14日, 2020				
-							</p>
-							<p class="relate-post-content">
-								今天是2020年4月14日。记得一个月前的今天是霍金先生去世两周年的日子。这个日子不值得纪念，但我们要缅怀。或许吧，每个月的14日总是一个孤独而悲伤的日子，今天也不例外。昨天，说破了C大网站的事情，实际上也不能后悔，毕竟我的《量子力学...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2020/04/14/2020%E5%B9%B44%E6%9C%8814%E6%97%A5%E6%97%A5%E8%AE%B0/" title="2020年4月14日日记">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2020年4月14日日记"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/04/13/2020%E5%B9%B44%E6%9C%8813%E6%97%A5%E6%97%A5%E8%AE%B0/" title="2020年4月13日日记">
-								2020年4月13日日记			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								四月 13日, 2020				
-							</p>
-							<p class="relate-post-content">
-								今天是2020年4月13日这个日子本该是开学的日子，但又推迟到了20日。其实，我虽然日日盼着开学，但实际上心里还是舍不得的。毕竟，开学就不能撸代码，不能爬网页，不能参加有意思的C大活动……神奇的是，我居然也想开学。因为在去学校的路上就...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2020/04/13/2020%E5%B9%B44%E6%9C%8813%E6%97%A5%E6%97%A5%E8%AE%B0/" title="2020年4月13日日记">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2020年4月13日日记"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/" title="量子计算基础">
-								量子计算基础			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								三月 12日, 2020				
-							</p>
-							<p class="relate-post-content">
-								从这篇博客开始，我们将开始量子计算的学习
-什么是量子计算？
-有些问题是如此的困难，如此之大，以至于即使世界上每台超级计算机都在解决该问题，仍然需要比宇宙的寿命更长的时间才能解决。
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      function loadDisqus() {
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2020/03/07/搭建个人博客/';
+          this.page.identifier = '/2020/03/07/搭建个人博客/';
+        };
+        (function () {
+          var d = document,
+            s = d.createElement('script');
+          s.src = '//' + '' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      }
+      waitElementVisible('disqus_thread', loadDisqus);
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript" target="_blank" rel="nofollow noopener noopener">comments powered by Disqus.</a>
+    </noscript>
+  </div>
 
 
-量子计算机有望解决地球上最大的一些挑战-在环境，农...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2020/03/12/%E9%87%8F%E5%AD%90%E8%AE%A1%E7%AE%97%E7%AE%80%E4%BB%8B/" title="量子计算基础">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="量子计算基础"/>
-							</a>
-						</div>
-					</li>												
-			
-		</ul>
-	
-</div>	
-				</div>
-				<div class="investment-content-list">
-					<div class="layout-comment">
-
-	
-
-		
-
-			<!-- gitalk comment -->
-			<!-- show gitalk comment -->
-<div id="gitalk-container"></div>
-
-<!-- gitalk`s css & js -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<link rel="stylesheet" href="/css/comment.css">
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
-<script type="text/javascript">
-
-	(function gitalkComment(){
-		//Thanks O-R
-		//https://github.com/gitalk/gitalk/issues/102#issuecomment-382970552
-		//去除尾部匹配正则数组的字符串  
-		//Remove redundant characters
-		String.prototype.trimEnd = function(regStr) {
-			let result = this;
-			if(regStr == undefined || regStr == null || regStr == "") {
-				return result;
-			}
-			let array = regStr.split(',');
-
-			if(array.length > 0) {
-
-				let c = array.shift(), 
-					str = this,
-					i = str.length,
-					rg = new RegExp(c),
-					matchArr = str.match(rg);
-
-				if(matchArr != undefined && matchArr != null && matchArr.length > 0) {
-					let matchStr = matchArr[0].replace(/\\/g, "\\\\").replace(/\*/g, "\\*")
-						.replace(/\+/g, "\\+").replace(/\|/g, "\\|")
-						.replace(/\{/g, "\\{").replace(/\}/g, "\\}")
-						.replace(/\(/g, "\\(").replace(/\)/g, "\\)")
-						.replace(/\^/g, "\\^").replace(/\$/g, "\\$")
-						.replace(/\[/g, "\\[").replace(/\]/g, "\\]")
-						.replace(/\?/g, "\\?").replace(/\,/g, "\\,")
-						.replace(/\./g, "\\.").replace(/\&/g, "\\&");
-					matchStr = matchStr + '$';
-					result = str.replace(new RegExp(matchStr), "");
-				}
-
-				if(array.length > 0) {
-					return result.trimEnd(array.join())
-				} else {
-					return result;
-				}
-			}
-		};
-
-		//Create gitalk
-		let gitalk = new Gitalk({
-			clientID: '661a7554991f68a006c7',
-			clientSecret: '4e91961c98e46537f8b24236652dfaebdfa4d372',
-			//id: window.location.pathname,
-			//id: decodeURI(window.location.pathname),
-			//id: (window.location.pathname).split("/").pop().substring(0, 49),
-			id: decodeURI( md5( location.href.trimEnd('#.*$,\\?.*$,index.html$') ) ),
-			repo: 'Rex-Gitalk',
-			owner: 'Rex',
-			admin: 'Rex',
-			distractionFreeMode: 'true',
-		})
-		gitalk.render('gitalk-container');		
-	})();
-</script>
-
-		
-		
-	
-
-</div>
-				</div>
-				<div class="investment-content-list">
-					<div class="layout-share">
-	
-	
-
-		
-			
-			<!-- socialShare share -->
-			<div class="social-share"></div>
-
-<!--  css & js -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
-			
-		
-		
-	
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div id="tocbot"></div>
 </div>
 
-
-				</div>
-			</div>	
-		</div>
-	</div>
+      </div>
+    
+  </div>
 </div>
 
-<!-- show math formula -->
+<!-- Custom -->
 
 
+    
+  </main>
 
-	 
-	
-<script src="/plugin/clipboard/clipboard.js"></script>
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
 
-	<script>
-		// Copy code !
-	    function preprocessing() {
-	        $("#article-content .highlight").each(function() {
-	            $(this).wrap('<div id="post-code"></div>');
-	        })
+  
 
-	        $("#article-content #post-code").each(function() {
-	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
-	        })
+  
 
-	        $("#article-content .copy-nav").each(function() {
-	            let languageClass = $(this).next().attr('class'),
-	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+  
 
-	            $(this).find('.code-language').text(language);
-	            $(this).append('<span class="copy-btn icon-paste"></span>');
-	        });
-	    }
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <p>By Joseph Joseda</p>
+    </div>
+    
 
-		function copy() {
-		    $('#article-content #post-code').each(function(i) {
-		        let codeCopyId = 'codeCopy-' + i;
+    
 
-		        let codeNode = $(this).find('.code'),
-		            copyButton = $(this).find('.copy-btn');
-
-		        codeNode.attr('id', codeCopyId);
-		        copyButton.attr('data-clipboard-target-id', codeCopyId);
-		    })
-   
-			let clipboard = new ClipboardJS('.copy-btn', {
-					target: function(trigger) {
-						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
-					}
-		      	});
-
-			//pure js
-			function showTooltip(elem, msg) {		   
-				elem.setAttribute('aria-label', msg);
-				elem.setAttribute('class', 'copy-btn icon-clipboard1');
-				setTimeout(function() {
-					elem.setAttribute('class', 'copy-btn icon-paste');
-				}, 2000);
-			}
-
-			clipboard.on('success', function(e) {
-			    e.clearSelection();
-			    console.info('Action:', e.action);		   
-			    console.info('Trigger:', e.trigger);
-			    showTooltip(e.trigger, 'Copied!');   
-			});
-			
-			clipboard.on('error', function(e) {
-			    console.error('Action:', e.action);
-			    console.error('Trigger:', e.trigger);
-			});
-		}
-		
-		(function copyCode(){
-			if ($('.layout-post').length) {
-			    preprocessing();
-			    copy();
-			} 
-		})();
-	</script>
-
-
-
-
-
-
-<link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
-
-
-<script src="/plugin/fancybox/jquery.fancybox.js"></script>
-
-
-<script type="text/javascript">
-	(function gallerySet(){
-		let titleID = $('.article-title a'),
-			imageID = $('.article-content img'),
-			videoID = $('.article-content video');
-		
-		let postTitle = titleID.text() ? titleID.text() : "No post title!";
-		
-		imageID.each(function() {
-			let imgPath = $(this).attr('src'),
-				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
-		
-			//给每个匹配的<img>元素打包, 即添加父元素<a>
-			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
-		});
-		
-		videoID.each(function() {
-			let videoPath = $(this).attr('src');
-		
-			//给每个匹配的<img>元素打包, 即添加父元素<a>
-			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
-		});
-		
-		//TODO：支持html5 video
-
-		if($('#layout-post').length) {
-			$('[data-fancybox="gallery"]').fancybox({
-				loop: true,
-				buttons: [
-					"zoom",
-					"share",
-					"slideShow",
-					"fullScreen",
-					//"download",
-					"thumbs",
-					"close"
-				],
-				protect: true
-			});
-		}
-	})();
-</script>
-		</main>
-
-		<!--footer-->
-		<footer>
-	<div id="navigation-show">
-		<ul id="global-nav">
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home" target="_blank">主页</a>
-		</li>
-		
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive" target="_blank">归档</a>
-		</li>
-		
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories" target="_blank">分类</a>
-		</li>
-		
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags" target="_blank">标签</a>
-		</li>
-		
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about" target="_blank">关于</a>
-		</li>
-		
-	
-		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery" target="_blank">相册</a>
-		</li>
-		
-	
-
-	
-</ul>
-	</div>
-
-	<div class="copyright">
-		<p>
-			 
-				&copy;2020, content by Rex. All Rights Reserved.
-			
-			
-				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
-			
-		</p>
-		<p>
-			
-
-	<!-- busuanzi -->
-	<!-- busuanzi -->
-
-
-
-			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
-			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
-		</p>
-	</div>		
+    
+  </div>
 </footer>
-		
-	<!-- Local or hitokoto! -->
 
-	
-<script src="/plugin/motto/motto.js"></script>
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
 
-	
-	<script type="text/javascript">
-		(function motto(){
-			let mottoText = getMingYanContent().split('</br> - </br>'),
-			
-			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
-			
-			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
-			
-			mottoTextContent = mottoTextContent.trim().substring(0, 100);
-		
-			$("#motto-content").html( mottoTextContent);
-			$("#motto-author").html( mottoTextFrom  );
-		})();	
-	</script>	
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
 
 
 
-<!-- love effect -->
-
-
-<!-- back to top -->
-
-	<div id="totop">
-	<span class="icon-circle-up"></span>
-</div>
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
 
 
 
-<!-- site analysis -->
 
 
-	<!-- site-analysis -->
-	
-	
-	
-	
-	
- 
-
-<!-- leancloud -->
 
 
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
 
 
-	
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "搭建个人博客&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
 
   
 
 
 
-<script src="/plugin/chinese/chinese.js"></script>
-<script src="/plugin/imagelazyloader/yall.min.js"></script>
-<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
-<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
-<script src="/plugin/resizediv/resizediv.js"></script>
-<script src="/js/main.js"></script>
+  
+  
+    <script type="text/javascript">
+      //定义获取词语下标
+      var a_idx = 0;
+      jQuery(document).ready(function ($) {
+        //点击body时触发事件
+        $("body").click(function (e) {
+          //需要显示的词语
+          var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+          //设置词语给span标签
+          var $i = $("<span/>").text(a[a_idx]);
+          //下标等于原来下标+1  余 词语总数
+          a_idx = (a_idx + 1) % a.length;
+          //获取鼠标指针的位置，分别相对于文档的左和右边缘。
+          //获取x和y的指针坐标
+          var x = e.pageX, y = e.pageY;
+          //在鼠标的指针的位置给$i定义的span标签添加css样式
+          $i.css({
+            "z-index": 999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": rand_color()
+          });
+          // 随机颜色
+          function rand_color() {
+            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+          }
+          //在body添加这个标签
+          $("body").append($i);
+          //animate() 方法执行 CSS 属性集的自定义动画。
+          //该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
+          //详情请看http://www.w3school.com.cn/jquery/effect_animate.asp
+          $i.animate({
+            //将原来的位置向上移动180
+            "top": y - 180,
+            "opacity": 0
+            //1500动画的速度
+          }, 1500, function () {
+            //时间到了自动删除
+            $i.remove();
+          });
+        });
+      })
+      ;
+    </script>
+  
 
-	</body>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
